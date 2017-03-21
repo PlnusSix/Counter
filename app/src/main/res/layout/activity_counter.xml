@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_counter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfa463"
+    android:orientation="vertical"
+    tools:context="com.plnus.puerility.counter.view.CounterActivity">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="出发地点:"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="7">
+
+            <EditText
+                android:id="@+id/counter_start_place_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:hint="请输入出发地"
+                android:paddingLeft="5dp"
+                android:textColorHint="#9e9e9e"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="到达地点:"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="7">
+
+            <EditText
+                android:id="@+id/counter_reach_place_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:hint="请输入目的地"
+                android:paddingLeft="5dp"
+                android:textColorHint="#9e9e9e"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/counter_btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_counter_begin_btn_bg"
+        android:text="开始记录"
+        android:textColor="@color/selector_counter_btn_bg" />
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/counter_current_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
